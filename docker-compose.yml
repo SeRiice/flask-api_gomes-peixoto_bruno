@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  db:
+    image: "mysql"
+    restart: "always"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=password"
+      - "MYSQL_DATABASE=app"
+    volumes:
+      - "./db:/var/lib/mysql"
+  web:
+    build: "."
+    volumes:
+      - "./src:/app/src/"
+    ports:
+      - "5001:5000"
