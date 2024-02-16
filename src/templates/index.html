@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/styles.css') }}"
+    />
+    <title>Booking Hotel</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Booking Hôtel</h1>
+      <p>
+        Bienvenue, ceci est une API permettant de gérer la réservation de
+        chambres d'hôtel pour une chaine d'hôtels.
+      </p>
+
+      <div id="list">
+        <p>Voici les différentes routes disponibles :</p>
+        <ul>
+          <li>
+            <span>
+              /api/chambres/disponibles
+            </span>
+            <ul>
+              <li>GET</li>
+            </ul>
+          </li>
+          <li>
+            <span>
+              /api/reservations
+            </span>
+            <ul>
+              <li>POST</li>
+            </ul>
+          </li>
+          <li>
+            <span>
+              /api/reservations/{id}
+            </span>
+            <ul>
+              <li>DELETE</li>
+            </ul>
+          </li>
+          <li>
+            <span>
+              /api/chambres
+            </span>
+            <ul>
+              <li>POST</li>
+            </ul>
+          </li>
+          <li>
+            <span>
+              /api/chambres/{id}
+            </span>
+            <ul>
+              <li>
+                PUT, DELETE
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
