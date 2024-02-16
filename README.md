@@ -3,13 +3,13 @@
 Copiez ce répertoire sur votre machine local :
 
 ```bash
-git clone ...
+git clone https://github.com/SeRiice/flask-api_gomes-peixoto_bruno
 ```
 
 Exécutez les commandes suivantes :
 
 ```bash
-cd ..
+cd ./flask-api_gomes-peixoto_bruno/
 docker compose up --build
 ```
 
